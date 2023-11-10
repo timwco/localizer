@@ -4,13 +4,8 @@ import * as R from 'ramda';
 import ISO from '../lib/iso';
 import { actions } from '../store';
 
-type Props = {
-  store: Object,
-  setData: Function,
-  next: Function,
-};
 
-class Translate extends Component<Props> {
+class Translate extends Component {
   constructor() {
     super();
     this.state = {

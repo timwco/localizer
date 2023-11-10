@@ -4,15 +4,7 @@ import ISO from '../lib/iso';
 import { actions } from '../store';
 import { validate } from '../lib/utils';
 
-type Props = {
-  store: Object,
-  next: Function,
-  setLanguage: Function,
-  setIncomplete: Function,
-  local: Boolean,
-};
-
-class Review extends Component<Props> {
+class Review extends Component {
   constructor() {
     super();
     this.state = { languages: [], addNew: false, local: false };

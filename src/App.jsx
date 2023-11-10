@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import Process from './components/Process';
@@ -9,14 +9,12 @@ const reduxStore = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-class App extends Component {
-  render() {
-    return (
-      <Provider store={reduxStore}>
-        <Process />
-      </Provider>
-    );
-  }
+function App() {
+  return (
+    <Provider store={reduxStore}>
+      <Process />
+    </Provider>
+  );
 }
 
 export default App;

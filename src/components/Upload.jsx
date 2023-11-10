@@ -3,12 +3,7 @@ import { connect } from 'react-redux';
 import { actions } from '../store';
 import { uploadPlaceholder } from '../lib/messages';
 
-type Props = {
-  next: Function,
-  setData: Function,
-};
-
-class Upload extends Component<Props> {
+class Upload extends Component {
   constructor() {
     super();
     this.state = {

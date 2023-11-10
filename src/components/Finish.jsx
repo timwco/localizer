@@ -6,11 +6,7 @@ import * as FireworksCanvas from 'fireworks-canvas';
 import { validate } from '../lib/utils';
 import { actions } from '../store';
 
-type Props = {
-  store: Object,
-};
-
-class Finish extends Component<Props> {
+class Finish extends Component {
   constructor() {
     super();
     this.state = {
